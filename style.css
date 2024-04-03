@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  /*  background: url('sonali.jpg');
+   background-repeat: no-repeat;*/
+}
+@media (max-width: 600px){
+    body{
+        background-color: rgb(73, 57, 57);
+    }
+    .img1{
+        padding-left: 55px;
+        img{
+        height: 200px;
+        width: 200px;
+    }
+    }
+    .second{
+        padding-left: 50px;
+        font-size: larger;
+    }
+    #check{
+        display: none;
+    }
+
+    .btn_one{
+        padding-left: 50%;
+        padding-top: 5%;
+        font-size: 30px;
+    }
+
+    .btn_two {
+        position: absolute;
+        left: 80%;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 60px;
+        opacity: 0;
+        cursor: pointer;
+        transition: 2s;
+        
+    }
+    .main{
+        position: relative;
+        left: -400px;
+    }
+    #check:checked~.main{
+        left: 0;
+    }
+    #check:checked~.sidebar_menu .btn_two{
+        opacity: 1;
+    }
+    #check:checked~.btn_one i{
+        
+        opacity: 0;
+    }
+    
+}
